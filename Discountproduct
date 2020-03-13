@@ -1,0 +1,34 @@
+package inventory.stock;
+
+public class Discountproduct extends Product {
+	
+	//no need to give all attributes ,mention only specific attributes
+	private float discountPercentage;
+	private float discountPrice;
+	
+	Discountproduct()
+	{
+		System.out.println("Discount product created");
+		
+	}
+	
+	
+	/**
+	 * @param discountPercentage
+	 * @param discountPrice
+	 */
+	public Discountproduct(float discountPercentage) {
+		super();
+		this.discountPercentage = discountPercentage;
+	
+	}
+
+
+	//method to calculate discountPrice
+	public void calcDiscount(Product p)
+	{
+		discountPrice=p.price-((discountpercentage)/100*price);
+		
+	}
+
+}
