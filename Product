@@ -1,0 +1,39 @@
+package inventory.stock;
+
+public class Product {
+
+	private int productId;
+	private String productName;
+	private float price;
+	private float quantityOnhand;
+	private float stockValue;
+	
+
+
+	/**
+	 * 
+	 */
+	public Product() {
+		super();
+		
+		System.out.println("Product created")
+	}
+
+
+
+	/**
+	 * @param productId
+	 * @param productName
+	 * @param price
+	 * @param quantityOnhand
+	 */
+	public Product(int productId, String productName, float price, float quantityOnhand) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.price = price;
+		this.quantityOnhand = quantityOnhand;
+	}
+	
+	
+}
